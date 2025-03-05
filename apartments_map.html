@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_789cd5a1e01375855114bad6e7a0e55d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_789cd5a1e01375855114bad6e7a0e55d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_789cd5a1e01375855114bad6e7a0e55d = L.map(
+                "map_789cd5a1e01375855114bad6e7a0e55d",
+                {
+                    center: [42.3363, -71.1064],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_af63c29191509bda71320da400ce1a0c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_af63c29191509bda71320da400ce1a0c.addTo(map_789cd5a1e01375855114bad6e7a0e55d);
+        
+    
+            var marker_1ce12bdf5d31e8609eb9cc4c377e0884 = L.marker(
+                [42.3363, -71.1064],
+                {}
+            ).addTo(map_789cd5a1e01375855114bad6e7a0e55d);
+        
+    
+            var icon_cad6826e54d89eea8a1de159d1317093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ce12bdf5d31e8609eb9cc4c377e0884.setIcon(icon_cad6826e54d89eea8a1de159d1317093);
+        
+    
+        var popup_692590c643d548a05169f8d633260ab6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe8034ee99ecb13c4fb517669c958276 = $(`<div id="html_fe8034ee99ecb13c4fb517669c958276" style="width: 100.0%; height: 100.0%;">Longwood Medical and Academic Area</div>`)[0];
+                popup_692590c643d548a05169f8d633260ab6.setContent(html_fe8034ee99ecb13c4fb517669c958276);
+            
+        
+
+        marker_1ce12bdf5d31e8609eb9cc4c377e0884.bindPopup(popup_692590c643d548a05169f8d633260ab6)
+        ;
+
+        
+    
+    
+            var marker_cluster_0d8ad028184e64c46d0ecb891359881a = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_12cd61f35e0282cbfcb2aa6ac9b6b163 = L.marker(
+                [42.3321496122449, -71.09951220408163],
+                {}
+            ).addTo(marker_cluster_0d8ad028184e64c46d0ecb891359881a);
+        
+    
+            var icon_b68cd7281022f1364ef809c29393d89b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_12cd61f35e0282cbfcb2aa6ac9b6b163.setIcon(icon_b68cd7281022f1364ef809c29393d89b);
+        
+    
+        var popup_5c11951e2b874144da4af7d5b114fddc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b33d09c7490da482142a0cd609c5daf1 = $(`<div id="html_b33d09c7490da482142a0cd609c5daf1" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 9 Burney St, Boston, MA 02120<br><b>Distance to Longwood:</b> 0.45 miles<br><b>Nearest Grocery:</b> 0.25 miles<br><b>Nearest Transit:</b> 0.03 miles</div>`)[0];
+                popup_5c11951e2b874144da4af7d5b114fddc.setContent(html_b33d09c7490da482142a0cd609c5daf1);
+            
+        
+
+        marker_12cd61f35e0282cbfcb2aa6ac9b6b163.bindPopup(popup_5c11951e2b874144da4af7d5b114fddc)
+        ;
+
+        
+    
+    
+            var marker_5bc52dcf71976216c4f9974dd3d0474a = L.marker(
+                [42.3281457, -71.1114501],
+                {}
+            ).addTo(marker_cluster_0d8ad028184e64c46d0ecb891359881a);
+        
+    
+            var icon_8bf7f0d93e5b05210c0b61b654935392 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5bc52dcf71976216c4f9974dd3d0474a.setIcon(icon_8bf7f0d93e5b05210c0b61b654935392);
+        
+    
+        var popup_552a3e9345b9062cff9cf09058632b38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_862421853c4440aa91be1e8f99712d97 = $(`<div id="html_862421853c4440aa91be1e8f99712d97" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 161 S Huntington Ave, Boston, MA 02130<br><b>Distance to Longwood:</b> 0.62 miles<br><b>Nearest Grocery:</b> 0.52 miles<br><b>Nearest Transit:</b> 0.09 miles</div>`)[0];
+                popup_552a3e9345b9062cff9cf09058632b38.setContent(html_862421853c4440aa91be1e8f99712d97);
+            
+        
+
+        marker_5bc52dcf71976216c4f9974dd3d0474a.bindPopup(popup_552a3e9345b9062cff9cf09058632b38)
+        ;
+
+        
+    
+    
+            var marker_f476fda97c0640f9caa05753e48e5a72 = L.marker(
+                [42.3229068, -71.0993363],
+                {}
+            ).addTo(marker_cluster_0d8ad028184e64c46d0ecb891359881a);
+        
+    
+            var icon_88bf876a92e3a4a5efd5ab09a6f41aa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f476fda97c0640f9caa05753e48e5a72.setIcon(icon_88bf876a92e3a4a5efd5ab09a6f41aa5);
+        
+    
+        var popup_8eee90b122149578b62fafe49ca78679 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78d3b46d3fd335c6478a5d3d22c2e3b4 = $(`<div id="html_78d3b46d3fd335c6478a5d3d22c2e3b4" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 225 Centre St, Boston, MA 02119<br><b>Distance to Longwood:</b> 0.99 miles<br><b>Nearest Grocery:</b> 0.76 miles<br><b>Nearest Transit:</b> 0.02 miles</div>`)[0];
+                popup_8eee90b122149578b62fafe49ca78679.setContent(html_78d3b46d3fd335c6478a5d3d22c2e3b4);
+            
+        
+
+        marker_f476fda97c0640f9caa05753e48e5a72.bindPopup(popup_8eee90b122149578b62fafe49ca78679)
+        ;
+
+        
+    
+    
+            var marker_9cb2ad80110f8d4e8feb5b690bae1e45 = L.marker(
+                [42.36718204642769, -71.11878057183664],
+                {}
+            ).addTo(marker_cluster_0d8ad028184e64c46d0ecb891359881a);
+        
+    
+            var icon_c51d98932b4b46c23d89d14ca757b8ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9cb2ad80110f8d4e8feb5b690bae1e45.setIcon(icon_c51d98932b4b46c23d89d14ca757b8ab);
+        
+    
+        var popup_ba117118fdc8fa2fa586dc633be5a837 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99c3b88d6dd0377e41fad82b1fadd7a2 = $(`<div id="html_99c3b88d6dd0377e41fad82b1fadd7a2" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 46 Soldiers Field Rd, Allston, MA 02134<br><b>Distance to Longwood:</b> 2.22 miles<br><b>Nearest Grocery:</b> 0.48 miles<br><b>Nearest Transit:</b> 0.22 miles</div>`)[0];
+                popup_ba117118fdc8fa2fa586dc633be5a837.setContent(html_99c3b88d6dd0377e41fad82b1fadd7a2);
+            
+        
+
+        marker_9cb2ad80110f8d4e8feb5b690bae1e45.bindPopup(popup_ba117118fdc8fa2fa586dc633be5a837)
+        ;
+
+        
+    
+    
+            var marker_90d5f6d9aee18e8cdd455d8bfe163b94 = L.marker(
+                [42.355667, -71.10739469609463],
+                {}
+            ).addTo(marker_cluster_0d8ad028184e64c46d0ecb891359881a);
+        
+    
+            var icon_10c92ff93decf7ec7ef3d04c286b3c0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90d5f6d9aee18e8cdd455d8bfe163b94.setIcon(icon_10c92ff93decf7ec7ef3d04c286b3c0d);
+        
+    
+        var popup_f5a8e71b645ac9bc74c6a8309b43205f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_567cf1896d2b6bb4fc30177b7dc5ce6f = $(`<div id="html_567cf1896d2b6bb4fc30177b7dc5ce6f" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 22 Chestnut St, Cambridge, MA 02139<br><b>Distance to Longwood:</b> 1.34 miles<br><b>Nearest Grocery:</b> 0.39 miles<br><b>Nearest Transit:</b> 0.13 miles</div>`)[0];
+                popup_f5a8e71b645ac9bc74c6a8309b43205f.setContent(html_567cf1896d2b6bb4fc30177b7dc5ce6f);
+            
+        
+
+        marker_90d5f6d9aee18e8cdd455d8bfe163b94.bindPopup(popup_f5a8e71b645ac9bc74c6a8309b43205f)
+        ;
+
+        
+    
+    
+            var marker_5444a262f36388e6c081abbd4d0159af = L.marker(
+                [42.342974520642464, -71.09719767512661],
+                {}
+            ).addTo(marker_cluster_0d8ad028184e64c46d0ecb891359881a);
+        
+    
+            var icon_46572495bb1f1ce72d79cefd7eec1120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5444a262f36388e6c081abbd4d0159af.setIcon(icon_46572495bb1f1ce72d79cefd7eec1120);
+        
+    
+        var popup_2b0d32d3587bc9b96c8f96622bd992a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c017f054d1e1668bdaf10601c2f2f78 = $(`<div id="html_4c017f054d1e1668bdaf10601c2f2f78" style="width: 100.0%; height: 100.0%;"><b>Address:</b> 111 Jersey St, Boston, MA 02215<br><b>Distance to Longwood:</b> 0.66 miles<br><b>Nearest Grocery:</b> 0.38 miles<br><b>Nearest Transit:</b> 0.01 miles</div>`)[0];
+                popup_2b0d32d3587bc9b96c8f96622bd992a9.setContent(html_4c017f054d1e1668bdaf10601c2f2f78);
+            
+        
+
+        marker_5444a262f36388e6c081abbd4d0159af.bindPopup(popup_2b0d32d3587bc9b96c8f96622bd992a9)
+        ;
+
+        
+    
+    
+            marker_cluster_0d8ad028184e64c46d0ecb891359881a.addTo(map_789cd5a1e01375855114bad6e7a0e55d);
+        
+</script>
+</html>
